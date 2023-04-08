@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Basics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>JS Basics</h1>
+            <h3>textContent vs innerText vs innerHTML</h3>
+            <br>
+        </div>
+        <div class="row my-content">
+            These are:
+            <h1>Our <span style="color:orange">favorite</span> Cities</h1>
+            <h3 style="color:red">Recommended</h3>
+            <br>
+            <ul class="my-list list">
+                <li>Seoul</li>
+                <li>Berlin</li>
+                <li>Bangkok</li>
+                <li>London</li>
+            </ul>
+            <br>
+            <button class="btn">Book a Trip</button>
+            <br>
+            <br>
+        </div>
+        <div class="row my-selection">
+            <h1>Show Output</h1>
+            <br>
+            <div class="my-output">
+                Any output shows here
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="form-heading">1. Returning Values</h1>
+            <form id="form1">
+                <input type="text" class="text-input">
+                <div class="radio-buttons">
+                    <div class="radio-button">
+                        <input type="radio" value="textContent" name="formOneRadio">
+                        <label>textContent</label>
+                    </div>
+                    <div class="radio-button">
+                        <input type="radio" value="innerHTML" name="formOneRadio">
+                        <label>innerHTML</label>
+                    </div>
+                </div>
+                <input type="submit" class="btn submit-btn" value="Enter">
+            </form>
+        </div>
+        <div class="row">
+            <h1 class="form-heading">2. Adding Content</h1>
+            <form id="form2">
+                <ul class="list" >
+                    <li>innerHTML will add HTML --> can be unsafe</li>
+                </ul>
+                <br>
+                <input type="text" class="text-input">
+                <div class="radio-buttons">
+                    <div class="radio-button">
+                        <input type="radio" value="textContent" name="formOneRadio">
+                        <label>textContent</label>
+                    </div>
+                    <div class="radio-button">
+                        <input type="radio" value="innerHTML" name="formOneRadio">
+                        <label>innerHTML</label>
+                    </div>
+                </div>
+                <input type="submit" class="btn submit-btn" value="Enter">
+            </form>
+        </div>
+        <div class="row">
+            <h1 class="form-heading">3. Appending Lists</h1>
+            <form id="form3">
+                <p>Add a city to the list</p>
+                <br>
+                <input type="text" class="text-input">
+                <input type="submit" class="btn submit-btn" value="Enter">
+            </form>
+        </div>
+    </div>
+    <script src="textContent.js"></script>
+</body>
+</html>
